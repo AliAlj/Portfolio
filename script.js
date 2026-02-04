@@ -4,7 +4,7 @@ yearEl.textContent = String(new Date().getFullYear());
 const copyBtn = document.getElementById("copyEmailBtn");
 const hint = document.getElementById("copyHint");
 
-const email = "you@example.com";
+const email = "alimjahmi@gmail.com";
 
 copyBtn.addEventListener("click", async () => {
   try {
@@ -16,5 +16,5 @@ copyBtn.addEventListener("click", async () => {
 });
 
 document.getElementById("githubLink").setAttribute("href", "https://github.com/AliAlj");
-document.getElementById("linkedinLink").setAttribute("href", "https://www.linkedin.com/");
+document.getElementById("linkedinLink").setAttribute("href", "https://www.linkedin.com/in/ali-alj/");
 document.getElementById("emailLink").setAttribute("href", `mailto:${email}`);
