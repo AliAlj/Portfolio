@@ -1,20 +1,32 @@
 const yearEl = document.getElementById("year");
 yearEl.textContent = String(new Date().getFullYear());
 
-const copyBtn = document.getElementById("copyEmailBtn");
-const hint = document.getElementById("copyHint");
+console.log("Portfolio loaded - Ali Aljahmi");
 
-const email = "alimjahmi@gmail.com";
-
-copyBtn.addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText(email);
-    hint.textContent = "Copied. Paste it into your email client.";
-  } catch {
-    hint.textContent = "Copy failed. Email is: " + email;
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  const email = "alimjahmi@gmail.com";
+  
+  const githubLinks = document.querySelectorAll('.connect-link');
+  githubLinks.forEach(link => {
+    if (link.textContent.includes('GitHub')) {
+      link.href = "https://github.com/AliAlj";
+      link.querySelector('.connect-text').textContent = '/AliAlj';
+    }
+  });
+  
+  const linkedinLinks = document.querySelectorAll('.connect-link');
+  linkedinLinks.forEach(link => {
+    if (link.textContent.includes('LinkedIn')) {
+      link.href = "https://www.linkedin.com/in/ali-alj/";
+      link.querySelector('.connect-text').textContent = '/ali-alj';
+    }
+  });
+  
+  const emailLinks = document.querySelectorAll('.connect-link');
+  emailLinks.forEach(link => {
+    if (link.textContent.includes('Email')) {
+      link.href = `mailto:${email}`;
+      link.querySelector('.connect-text').textContent = email;
+    }
+  });
 });
-
-document.getElementById("githubLink").setAttribute("href", "https://github.com/AliAlj");
-document.getElementById("linkedinLink").setAttribute("href", "https://www.linkedin.com/in/ali-alj/");
-document.getElementById("emailLink").setAttribute("href", `mailto:${email}`);
