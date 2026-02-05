@@ -41,11 +41,13 @@ body {
 }
 
 .logo {
-  font-weight: 800;
-  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
   color: var(--text);
-  letter-spacing: -0.02em;
+  text-decoration: none;
 }
+
 
 .nav {
   display: flex;
