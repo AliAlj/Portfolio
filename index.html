@@ -7,250 +7,287 @@
     <meta name="description" content="Portfolio of Ali Aljahmi: AlfiBaT, WordRonin, REVO, AimGame." />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <header class="site-header">
       <div class="container header-row">
         <a class="logo" href="#top" aria-label="Home">Ali Aljahmi</a>
 
         <nav class="nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
           <a href="#about">About</a>
+          <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
+          <a href="#connect">Connect</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
+      <!-- HERO (MINIMAL) -->
       <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">Computer Science Graduate · Apple Developer Academy Participant</p>
-            <h1>Building and analyzing digital products with users in mind.</h1>
-            <p class="subhead">
-              I work at the intersection of product, UX, and engineering. I like early stage builds, tight feedback loops, and measurable improvement.
-            </p>
-
-            <div class="cta-row">
-              <a class="btn primary" href="#projects">View projects</a>
-              <a class="btn ghost" href="#connect">Connect</a>
-            </div>
-          </div>
-
-          <div class="hero-card" role="region" aria-label="Highlights">
-            <div class="stat">
-              <div class="stat-num">4</div>
-              <div class="stat-label">Total Projects</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">2</div>
-              <div class="stat-label">Actively Iterating</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">1</div>
-              <div class="stat-label">Live Web Demo</div>
-            </div>
-
-            <div class="callout">
-              <p class="callout-title">Currently</p>
-              <p class="callout-text">
-                Iterating on AlfiBaT and WordRonin. REVO and AimGame represent completed work with different technical focuses.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
         <div class="container">
-          <div class="section-head">
-            <h2>Projects</h2>
-            <p class="muted">
-              Short, honest writeups. Two are in progress and presented as active builds, not "unfinished."
-            </p>
-          </div>
+          <p class="eyebrow">
+            Computer Science Graduate · Apple Developer Academy Junior Learner
+          </p>
 
-          <div class="grid">
-            <article class="card">
-                <div class="card-top project-title">
-                    <div class="project-name">
-                    <img
-                        src="./assets/alfibat-logo.png"
-                        alt="AlfiBaT app logo"
-                        class="project-logo"
-                    />
-                    <h3>AlfiBaT</h3>
-                    </div>
-                    <span class="badge inprogress">In progress</span>
-                </div>
-              <p class="muted">
-                iPad learning experience for Arabic letters using touch, audio feedback, and guided practice.
-              </p>
-              <div class="meta">
-                <span class="pill">SwiftUI</span>
-                <span class="pill">PencilKit</span>
-                <span class="pill">Language learning UX</span>
-              </div>
-              <p class="small">
-                Current focus: tightening the learning flow, clearer guidance for right to left writing, and better onboarding.
-              </p>
-              <!-- REMOVED links for in-progress projects -->
-            </article>
-
-            <article class="card">
-                <div class="card-top project-title">
-                    <div class="project-name">
-                    <img
-                        src="./assets/wordronin-logo.png"
-                        alt="WordRonin app logo"
-                        class="project-logo"
-                    />
-                    <h3>WordRonin</h3>
-                    </div>
-                    <span class="badge inprogress">In progress</span>
-                </div>
-              <p class="muted">
-                Fast paced word game exploring engagement, scoring, and accessibility friendly interaction.
-              </p>
-              <div class="meta">
-                <span class="pill">iOS</span>
-                <span class="pill">Game loop</span>
-                <span class="pill">UX iteration</span>
-              </div>
-              <p class="small">
-                Current focus: tuning pacing, reward design, and accessible modes that work without visual dependency.
-              </p>
-              <!-- REMOVED links for in-progress projects -->
-            </article>
-
-            <article class="card">
-                <div class="card-top">
-                    <h3>REVO</h3>
-                    <span class="badge complete">Complete</span>
-                </div>
-
-                <p class="muted">
-                    Research framework for evaluating reasoning and decision behavior of LLM based autonomous agents in CARLA.
-                </p>
-
-                <div class="meta">
-                    <span class="pill">Python</span>
-                    <span class="pill">CARLA</span>
-                    <span class="pill">LLM Evaluation</span>
-                </div>
-
-                <p class="small">
-                   REVO evaluates LLM based driving agents across challenging CARLA scenarios by logging behavior, planning outputs, and reasoning traces and visualizing how decisions evolve over each route.
-                </p>
-
-                <div class="links">
-                    <a href="https://github.com/AliAlj/REVO" target="_blank" rel="noreferrer">Source Code</a>
-                </div>
-            </article>
-
-
-            <article class="card">
-               <div class="card-top project-title">
-                    <div class="project-name">
-                    <img
-                        src="./assets/aimgame-logo.png"
-                        alt="aimgame app logo"
-                        class="project-logo"
-                    />
-                    <h3>AimGame</h3>
-                    </div>
-                <span class="badge complete">Complete</span>
-              </div>
-              <p class="muted">
-                Web based aim trainer focusing on realtime input behavior, settings, and measurable performance feedback.
-              </p>
-              <div class="meta">
-                <span class="pill">JavaScript</span>
-                <span class="pill">HTML</span>
-                <span class="pill">CSS</span>
-              </div>
-              <p class="small">
-                Emphasis: fast iteration, user configuration, and a clear feedback loop between settings and outcomes.
-              </p>
-              <div class="links">
-                <!-- Live demo and repo for AimGame -->
-                <a href="https://aliatumich.github.io/AimGame/" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="https://github.com/AliAtUmich/AimGame" target="_blank" rel="noreferrer">Source Code</a>
-              </div>
-            </article>
+          <div class="cta-row">
+            <a class="btn primary" href="#about">About me</a>
+            <a class="btn ghost" href="#projects">Projects</a>
+            <a class="btn ghost" href="#connect">Connect</a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section alt">
+      <!-- ABOUT FIRST -->
+      <section id="about" class="section">
         <div class="container two-col">
           <div>
             <h2>About</h2>
             <p>
-              I am Ali Aljahmi, a Computer Science graduate from the University of Michigan Dearborn and an Apple Developer Academy Participant. I enjoy building early stage digital products, learning from real feedback, and improving experiences through careful iteration.
+              I am Ali Aljahmi, a Computer Science graduate from the University of
+              Michigan Dearborn and a Junior Learner at the Apple Developer Academy.
+              I enjoy building early stage digital products, learning from real
+              feedback, and improving experiences through careful iteration.
             </p>
             <p>
-              For the Digital Summer Clinic, I am excited by the idea of working with startups, shipping useful work quickly, and supporting decisions with data and clear communication.
+              One of my strengths is giving constructive feedback on early ideas by
+              spotting small changes or alternative perspectives that meaningfully
+              improve a project’s direction.
+            </p>
+            <p>
+              For the Digital Summer Clinic, I am excited by the idea of working
+              closely with startups, shipping useful work quickly, and supporting
+              decisions with data and clear communication.
             </p>
           </div>
 
           <div class="about-card">
             <h3 class="about-title">What I bring</h3>
-            <p class="muted">
-              A mix of product thinking, practical engineering, and an analytical approach to understanding what users do and why.
-            </p>
             <ul class="list">
-              <li>Clear writing and structured problem solving</li>
-              <li>Comfort with ambiguity and iteration</li>
-              <li>Ability to turn complex work into simple outputs</li>
+              <li>Thoughtful, constructive feedback on early ideas</li>
+              <li>Comfort working in ambiguous, iterative environments</li>
+              <li>Ability to turn complex work into clear outputs</li>
+              <li>Strong written and verbal communication</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- PROJECTS -->
+      <section id="projects" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="muted">
+              A mix of in progress builds and completed work, presented honestly
+              and with a focus on learning and iteration.
+            </p>
+          </div>
+
+          <div class="grid">
+            <!-- ALFIBAT -->
+            <article class="card">
+              <div class="card-top project-title">
+                <div class="project-name">
+                  <img
+                    src="./assets/alfibat-logo.png"
+                    alt="AlfiBaT app logo"
+                    class="project-logo"
+                  />
+                  <h3>AlfiBaT</h3>
+                </div>
+                <span class="badge inprogress">In progress</span>
+              </div>
+
+              <p class="muted">
+                iPad learning experience for Arabic letters using touch, audio
+                feedback, and guided practice.
+              </p>
+
+              <div class="meta">
+                <span class="pill">SwiftUI</span>
+                <span class="pill">PencilKit</span>
+                <span class="pill">Language learning UX</span>
+              </div>
+
+              <p class="small">
+                Current focus: improving learning flow, clearer right to left
+                guidance, and onboarding.
+              </p>
+            </article>
+
+            <!-- WORDRONIN -->
+            <article class="card">
+              <div class="card-top project-title">
+                <div class="project-name">
+                  <img
+                    src="./assets/wordronin-logo.png"
+                    alt="WordRonin app logo"
+                    class="project-logo"
+                  />
+                  <h3>WordRonin</h3>
+                </div>
+                <span class="badge inprogress">In progress</span>
+              </div>
+
+              <p class="muted">
+                Fast paced word game exploring engagement, scoring systems, and
+                real time player feedback.
+              </p>
+
+              <div class="meta">
+                <span class="pill">iOS</span>
+                <span class="pill">Game loop</span>
+                <span class="pill">Engagement design</span>
+              </div>
+
+              <p class="small">
+                Current focus: pacing, reward tuning, and accessible play modes.
+              </p>
+            </article>
+
+            <!-- REVO -->
+            <article class="card">
+              <div class="card-top">
+                <h3>REVO</h3>
+                <span class="badge complete">Complete</span>
+              </div>
+
+              <p class="muted">
+                Research framework for evaluating reasoning and decision behavior
+                of LLM based autonomous agents in CARLA.
+              </p>
+
+              <div class="meta">
+                <span class="pill">Python</span>
+                <span class="pill">CARLA</span>
+                <span class="pill">LLM Evaluation</span>
+              </div>
+
+              <p class="small">
+                Evaluates and visualizes how LLM based driving agents make decisions
+                across challenging simulation scenarios.
+              </p>
+
+              <div class="links">
+                <a
+                  href="https://github.com/AliAlj/REVO"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Source Code</a
+                >
+              </div>
+            </article>
+
+            <!-- AIMGAME -->
+            <article class="card">
+              <div class="card-top project-title">
+                <div class="project-name">
+                  <img
+                    src="./assets/aimgame-logo.png"
+                    alt="AimGame app logo"
+                    class="project-logo"
+                  />
+                  <h3>AimGame</h3>
+                </div>
+                <span class="badge complete">Complete</span>
+              </div>
+
+              <p class="muted">
+                Web based aim trainer focused on input behavior, configuration,
+                and measurable performance feedback.
+              </p>
+
+              <div class="meta">
+                <span class="pill">JavaScript</span>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+              </div>
+
+              <p class="small">
+                Built with fast iteration and a tight feedback loop between
+                settings and results.
+              </p>
+
+              <div class="links">
+                <a
+                  href="https://aliatumich.github.io/AimGame/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/AliAtUmich/AimGame"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Source Code</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
       <section id="skills" class="section">
         <div class="container">
           <h2>Skills</h2>
           <div class="skills">
             <div class="skill-group">
               <h3>Development</h3>
-              <p class="muted">SwiftUI, JavaScript, Python, HTML, CSS, Git</p>
+              <p class="muted">
+                SwiftUI, JavaScript, Python, HTML, CSS, Git
+              </p>
             </div>
+
             <div class="skill-group">
               <h3>Product and UX</h3>
-              <p class="muted">Prototyping, accessibility thinking, feedback driven iteration</p>
+              <p class="muted">
+                Prototyping, feedback driven iteration, interaction design
+              </p>
             </div>
+
             <div class="skill-group">
               <h3>Analytics mindset</h3>
-              <p class="muted">Instrumentation, evaluation, visualization, insight summaries</p>
+              <p class="muted">
+                Evaluation, visualization, insight synthesis
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CONNECT -->
       <section id="connect" class="section alt">
         <div class="container">
           <div class="section-head">
             <h2>Connect</h2>
             <p class="muted">
-              Feel free to reach out for collaboration, opportunities, or just to chat about tech and product development.
+              Open to collaboration, internships, and conversations about
+              building thoughtful digital products.
             </p>
           </div>
-          
+
           <div class="connect-links">
-            <a href="https://github.com/AliAlj" target="_blank" rel="noreferrer" class="connect-link">
-              <span class="connect-icon">GitHub</span>
-              <span class="connect-text">/AliAlj</span>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/alialj" target="_blank" rel="noreferrer" class="connect-link">
-              <span class="connect-icon">LinkedIn</span>
-              <span class="connect-text">/alialj</span>
-            </a>
-            
-            <a href="mailto:alimjahmi@gmail.com" class="connect-link">
-              <span class="connect-icon">Email</span>
-              <span class="connect-text">alimjahmi@gmail.com</span>
-            </a>
+            <a
+              href="https://github.com/AliAlj"
+              target="_blank"
+              rel="noreferrer"
+              class="connect-link"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/alialj"
+              target="_blank"
+              rel="noreferrer"
+              class="connect-link"
+              >LinkedIn</a
+            >
+            <a
+              href="mailto:alimjahmi@gmail.com"
+              class="connect-link"
+              >Email</a
+            >
           </div>
         </div>
       </section>
