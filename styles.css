@@ -450,7 +450,11 @@ h3 {
   border-radius: 14px;
   border: 1px solid var(--border);
   display: block;
+
+  max-height: 500px;
+  object-fit: cover;
 }
+
 
 @media (max-width: 880px) {
   .hero-grid { grid-template-columns: 1fr; }
