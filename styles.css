@@ -427,6 +427,11 @@ h3 {
   color: inherit;
 }
 
+.card-link * {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card-link:focus-visible {
   outline: 3px solid rgba(11, 18, 32, 0.25);
   outline-offset: 6px;
