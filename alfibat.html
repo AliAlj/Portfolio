@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlfiBaT | Ali Aljahmi</title>
+    <meta
+      name="description"
+      content="AlfiBaT is a personal iPad app built by Ali Aljahmi for the Swift Student Challenge to help beginners learn Arabic letters."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="logo" href="./index.html#projects" aria-label="Back to projects">← Projects</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#connect">Connect</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">iPad App · Swift Student Challenge</p>
+          <h1>AlfiBaT</h1>
+
+          <p class="subhead">
+            A personal iPad app I built to help beginners learn Arabic letters, designed around
+            the exact challenges I faced as a learner.
+          </p>
+
+          <div class="meta" style="margin-top: 14px;">
+            <span class="pill">SwiftUI</span>
+            <span class="pill">PencilKit</span>
+            <span class="pill">AVFoundation</span>
+            <span class="pill">iPadOS</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Overview and Build</h2>
+            <p>
+              I built AlfiBaT for the Swift Student Challenge as a way to create the kind of learning
+              tool I wished I had when starting to learn Arabic. I focused on the areas that felt most
+              confusing to me: pronunciation, letter shapes inside words, and writing practice.
+            </p>
+            <p>
+              The app is structured around short, focused learning loops. Users hear a letter, see how it
+              behaves in context, and then practice writing it directly on the iPad. I added a name writing
+              screen to make the experience more personal and engaging.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-title">Design and Tools</h3>
+            <ul class="list">
+              <li>SwiftUI for clean, reusable UI components</li>
+              <li>AVFoundation for clear audio pronunciation</li>
+              <li>Pencil and touch input for writing practice</li>
+              <li>Designed around real learner pain points</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="screens">
+        <div class="container">
+          <div class="section-head">
+            <h2>Screens</h2>
+            <p class="muted">Key parts of the AlfiBaT learning flow.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="card-top">
+                <h3>Alphabet grid</h3>
+              </div>
+              <img class="project-shot" src="./assets/alfibat/alphabet-grid.png" alt="AlfiBaT alphabet grid" />
+              <p class="small">Browse letters and jump into focused practice.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h3>Letter lesson</h3>
+              </div>
+              <img class="project-shot" src="./assets/alfibat/letter-lesson.png" alt="AlfiBaT letter lesson screen" />
+              <p class="small">
+                Learn pronunciation and see how letters change shape in words within a single guided view.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h3>Writing practice</h3>
+              </div>
+              <img class="project-shot" src="./assets/alfibat/tracing.png" alt="AlfiBaT writing practice" />
+              <p class="small">Practice writing letters directly on the iPad through guided interaction.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h3>Name writing</h3>
+              </div>
+              <img class="project-shot" src="./assets/alfibat/name-writing.png" alt="AlfiBaT name writing screen" />
+              <p class="small">A personal feature that lets learners practice writing their own name.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p class="muted">© <span id="year"></span> Ali Aljahmi</p>
+        <p class="muted">Built for clarity. Hosted on GitHub Pages.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
