@@ -1,89 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WordRonin | Ali Aljahmi</title>
-    <meta
-      name="description"
-      content="WordRonin is an in progress iOS word game by Ali Aljahmi focused on pacing, scoring, and accessible play."
-    />
-    <link rel="stylesheet" href="./styles.css?v=3" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordRonin | Ali Aljahmi</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
 
-  <body>
-    <header class="site-header">
-      <div class="container header-row">
-        <a class="logo" href="./index.html#projects" aria-label="Back to projects">← Projects</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="logo" href="index.html">Ali Aljahmi</a>
+  </div>
+</header>
 
-        <nav class="nav" aria-label="Primary">
-          <a href="./index.html#about">About</a>
-          <a href="./index.html#skills">Skills</a>
-          <a href="./index.html#connect">Connect</a>
-        </nav>
-      </div>
-    </header>
+<main class="section">
+  <div class="container">
 
-    <main id="top">
-      <section class="hero">
-        <div class="container">
-          <p class="eyebrow">iOS Game · In progress</p>
-          <h1>WordRonin</h1>
+    <a href="index.html#projects" class="btn ghost">← Back</a>
 
-          <p class="subhead">
-            A fast paced word game where I iterate on engagement through pacing, scoring, and
-            real time player feedback.
-          </p>
+    <h1 style="margin-top: 20px;">WordRonin</h1>
 
-          <div class="meta" style="margin-top: 14px;">
-            <span class="pill">iOS</span>
-            <span class="pill">Gameplay loop</span>
-            <span class="pill">Scoring design</span>
-            <span class="pill">Accessibility</span>
-          </div>
-        </div>
-      </section>
+    <p class="muted">
+      A fast paced iPad word game where players swipe across letters to form words
+      before time runs out. The game includes both a visual Slice Mode and a
+      Listen Mode designed to support players with visual impairments through
+      audio driven interaction.
+    </p>
 
-      <section class="section">
-        <div class="container two-col">
-          <div>
-            <h2>Overview</h2>
-            <p>
-              WordRonin is a word game where I treat every feature like an experiment. I design a mechanic,
-              test how it feels, and then tighten the pacing and reward structure based on what players do,
-              not what I assume they will do.
-            </p>
-            <p>
-              The work is centered on making the experience readable, responsive, and replayable. I am also
-              developing an accessible listening focused mode that supports different ways of playing.
-            </p>
+    <div class="meta">
+      <span class="pill">Swift</span>
+      <span class="pill">SpriteKit</span>
+      <span class="pill">Game Design</span>
+      <span class="pill">Accessibility</span>
+    </div>
 
-            <h2 style="margin-top: 22px;">Current focus</h2>
-            <p class="muted">
-              Pacing, reward tuning, and accessible play modes that keep the loop satisfying without being noisy.
-            </p>
-          </div>
+    <h2 style="margin-top:40px;">Gameplay Screens</h2>
 
-          <div class="about-card">
-            <h3 class="about-title">Outcome so far</h3>
-            <ul class="list">
-              <li>Built core gameplay loop and iteration scaffolding</li>
-              <li>Implemented scoring experiments for rapid tuning</li>
-              <li>Designed toward accessible modes, including audio based play</li>
-              <li>Focused on clarity and feedback in every interaction</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
+    <div class="project-gallery">
+      <img src="./assets/wordronin/wordroninhomescreen.png" alt="WordRonin Home Screen">
+      <img src="./assets/wordronin/wordroninslicescreen.png" alt="WordRonin Slice Mode">
+      <img src="./assets/wordronin/wordroninlistenscreen.png" alt="WordRonin Listen Mode">
+    </div>
 
-    <footer class="footer">
-      <div class="container footer-row">
-        <p class="muted">© <span id="year"></span> Ali Aljahmi</p>
-        <p class="muted">Built for clarity. Hosted on GitHub Pages.</p>
-      </div>
-    </footer>
+    <h2 style="margin-top:40px;">How I Built It</h2>
 
-    <script src="script.js"></script>
-  </body>
+    <p>
+      WordRonin was built using SpriteKit for gameplay and Swift for overall structure.
+      We iterated heavily on pacing, scoring, and interaction design to make the
+      experience feel fast but not overwhelming. Building Listen Mode pushed us
+      to rethink interaction entirely and design a game that works beyond visuals.
+    </p>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p class="muted">© <span id="year"></span> Ali Aljahmi</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
