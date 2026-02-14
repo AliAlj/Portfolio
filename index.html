@@ -8,15 +8,15 @@
       name="description"
       content="Portfolio of Ali Aljahmi: AlfiBaT, WordRonin, REVO, AimGame."
     />
-    <link rel="stylesheet" href="./styles.css?v=4" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
   </head>
 
   <body>
     <header class="site-header">
       <div class="container header-row">
-        <a class="logo" href="#top">Ali Aljahmi</a>
+        <a class="logo" href="#top" aria-label="Home">Ali Aljahmi</a>
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
@@ -74,57 +74,77 @@
         <div class="container">
           <div class="section-head">
             <h2>Projects</h2>
+            <p class="muted">
+              A mix of in progress builds and completed work, presented honestly
+              and with a focus on learning and iteration.
+            </p>
           </div>
 
           <div class="grid">
-
-            <!-- AlfiBaT -->
             <a href="./alfibat.html" class="card-link">
               <article class="card">
                 <div class="card-top project-title">
                   <div class="project-name">
-                    <img src="./assets/alfibat-logo.png" alt="AlfiBaT logo" class="project-logo" />
+                    <img
+                      src="./assets/alfibat-logo.png"
+                      alt="AlfiBaT app logo"
+                      class="project-logo"
+                    />
                     <h3>AlfiBaT</h3>
                   </div>
                   <span class="badge inprogress">In progress</span>
                 </div>
 
                 <p class="muted">
-                  iPad learning experience for Arabic letters using touch and audio feedback.
+                  iPad learning experience for Arabic letters using touch,
+                  audio feedback, and guided practice.
                 </p>
 
                 <div class="meta">
                   <span class="pill">SwiftUI</span>
                   <span class="pill">PencilKit</span>
-                  <span class="pill">Lnaguage Learning UX</span>
+                  <span class="pill">Language learning UX</span>
                 </div>
+
+                <p class="small">
+                  Outcome: Built focused learning loops for recognition,
+                  pronunciation, and writing practice.
+                </p>
               </article>
             </a>
 
-            <!-- WordRonin -->
             <a href="./wordronin.html" class="card-link">
               <article class="card">
                 <div class="card-top project-title">
                   <div class="project-name">
-                    <img src="./assets/wordronin-logo.png" alt="WordRonin logo" class="project-logo" />
+                    <img
+                      src="./assets/wordronin-logo.png"
+                      alt="WordRonin app logo"
+                      class="project-logo"
+                    />
                     <h3>WordRonin</h3>
                   </div>
                   <span class="badge complete">Complete</span>
                 </div>
 
                 <p class="muted">
-                  Fast paced word game built with SpriteKit featuring Slice and Listen modes.
+                  Fast paced word game exploring engagement, scoring systems,
+                  and real time player feedback.
                 </p>
 
                 <div class="meta">
-                  <span class="pill">Swift</span>
-                  <span class="pill">SpriteKit</span>
-                  <span class="pill">Engagement Design</span>
+                  <span class="pill">iOS</span>
+                  <span class="pill">Game loop</span>
+                  <span class="pill">Engagement design</span>
                 </div>
+
+                <p class="small">
+                  Outcome: Implemented a core gameplay loop designed for fast
+                  iteration and playtesting.
+                </p>
               </article>
             </a>
 
-            <!-- REVO -->
             <article class="card">
               <div class="card-top">
                 <h3>REVO</h3>
@@ -132,14 +152,20 @@
               </div>
 
               <p class="muted">
-                Research framework evaluating reasoning behavior of LLM based autonomous agents.
+                Research framework for evaluating reasoning and decision
+                behavior of LLM based autonomous agents in CARLA.
               </p>
 
               <div class="meta">
                 <span class="pill">Python</span>
                 <span class="pill">CARLA</span>
-                 <span class="pill">LLM Evaluation</span>               
+                <span class="pill">LLM Evaluation</span>
               </div>
+
+              <p class="small">
+                Outcome: Built an evaluation and visualization pipeline to
+                analyze agent decision behavior across scenarios.
+              </p>
 
               <div class="links">
                 <a
@@ -150,16 +176,20 @@
               </div>
             </article>
 
-            <!-- AimGame -->
-            <a href="https://aliatumich.github.io/AimGame/"
-               target="_blank"
-               rel="noreferrer"
-               class="card-link">
-
+            <a
+              href="https://aliatumich.github.io/AimGame/"
+              target="_blank"
+              rel="noreferrer"
+              class="card-link"
+            >
               <article class="card">
                 <div class="card-top project-title">
                   <div class="project-name">
-                    <img src="./assets/aimgame-logo.png" alt="AimGame logo" class="project-logo logo-wide" />
+                    <img
+                      src="./assets/aimgame-logo.png"
+                      alt="AimGame logo"
+                      class="project-logo logo-wide"
+                    />
                     <h3>AimGame</h3>
                   </div>
                   <span class="badge complete">Complete</span>
@@ -174,9 +204,19 @@
                   <span class="pill">HTML</span>
                   <span class="pill">CSS</span>
                 </div>
+
+                <p class="small">
+                  Outcome: Shipped a live demo with a tight settings to performance
+                  feedback loop.
+                </p>
+
+                <div class="links">
+                  <span>Live Demo</span>
+                  <span>·</span>
+                  <span>GitHub</span>
+                </div>
               </article>
             </a>
-
           </div>
         </div>
       </section>
@@ -184,29 +224,73 @@
       <section id="skills" class="section">
         <div class="container">
           <h2>Skills</h2>
-          <p class="muted">
-            SwiftUI, SpriteKit, JavaScript, Python, HTML, CSS, Git
-          </p>
+          <div class="skills">
+            <div class="skill-group">
+              <h3>Development</h3>
+              <p class="muted">SwiftUI, JavaScript, Python, HTML, CSS, Git</p>
+            </div>
+
+            <div class="skill-group">
+              <h3>Product and UX</h3>
+              <p class="muted">
+                Prototyping, feedback driven iteration, interaction design
+              </p>
+            </div>
+
+            <div class="skill-group">
+              <h3>Analytics mindset</h3>
+              <p class="muted">
+                Evaluation, visualization, insight synthesis
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="connect" class="section alt">
         <div class="container">
-          <h2>Connect</h2>
+          <div class="section-head">
+            <h2>Connect</h2>
+            <p class="muted">
+              Open to collaboration, internships, and conversations about
+              building thoughtful digital products.
+            </p>
+          </div>
 
           <div class="connect-links">
-            <a href="https://github.com/AliAlj" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/ali-alj/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:alimjahmi@gmail.com">Email</a>
+            <a
+              href="https://github.com/AliAlj"
+              target="_blank"
+              rel="noreferrer"
+              class="connect-link"
+            >
+              <div class="connect-icon">GitHub</div>
+              <div class="connect-text">/AliAlj</div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ali-alj/"
+              target="_blank"
+              rel="noreferrer"
+              class="connect-link"
+            >
+              <div class="connect-icon">LinkedIn</div>
+              <div class="connect-text">/ali-alj</div>
+            </a>
+
+            <a href="mailto:alimjahmi@gmail.com" class="connect-link">
+              <div class="connect-icon">Email</div>
+              <div class="connect-text">alimjahmi@gmail.com</div>
+            </a>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
       <div class="container footer-row">
         <p class="muted">© <span id="year"></span> Ali Aljahmi</p>
+        <p class="muted">Built for clarity. Hosted on GitHub Pages.</p>
       </div>
     </footer>
 
