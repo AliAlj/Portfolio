@@ -1,11 +1,12 @@
+import Link from "next/link";
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen">
       <section className="pt-20 pb-16">
         <div className="mx-auto max-w-2xl px-6">
-          <a href="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
+          <Link href="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
             ← Back
-          </a>
+          </Link>
 
           <h1 className="mt-6 text-3xl md:text-4xl font-semibold">Privacy Policy for AlfiBaT</h1>
           <p className="mt-2 text-sm text-muted-foreground">Effective Date: February 2026</p>

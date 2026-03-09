@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 
@@ -13,9 +14,9 @@ export default function AimGamePage() {
       <main className="min-h-screen">
         <section className="pt-20 pb-10">
           <div className="mx-auto max-w-5xl px-6">
-            <a href="/#projects" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
+            <Link href="/#projects" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
               ← Back
-            </a>
+            </Link>
 
             <p className="mt-4 text-sm font-semibold text-muted-foreground">Web · JavaScript · HTML Canvas</p>
 
@@ -40,7 +41,7 @@ export default function AimGamePage() {
                 className="inline-block rounded-full bg-foreground text-background px-5 py-2 text-sm font-semibold hover:opacity-80 transition-opacity"
               >
                 Live Demo
-              </a>
+              </Link>
               <a
                 href="https://github.com/AliAtUmich/AimGame"
                 target="_blank"
@@ -48,7 +49,7 @@ export default function AimGamePage() {
                 className="inline-block rounded-full border px-5 py-2 text-sm font-semibold hover:bg-muted transition-colors"
               >
                 Source Code
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -79,7 +80,7 @@ export default function AimGamePage() {
 
         <footer className="py-8 border-t">
           <div className="mx-auto max-w-5xl px-6 flex justify-between items-center text-sm text-muted-foreground">
-            <a href="/#projects" className="font-semibold hover:text-foreground">← Back to projects</a>
+            <Link href="/#projects" className="font-semibold hover:text-foreground">← Back to projects</Link>
             <span>© 2026 Ali Aljahmi</span>
           </div>
         </footer>

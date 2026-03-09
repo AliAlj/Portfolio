@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { HeroScrollDemo } from "@/components/hero-scroll-demo";
 import { ChromaOverlay } from "@/components/chroma-overlay";
@@ -43,7 +44,7 @@ export default function Home() {
 
                 {/* AlfiBaT */}
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-violet-500/35 to-transparent">
-                  <a href="/alfibat" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View AlfiBaT project" />
+                  <Link href="/alfibat" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View AlfiBaT project" />
                   <div className="flex items-start justify-between gap-4">
                     <img src="/logos/alfibat.png" alt="AlfiBaT logo" className="w-20 h-20 rounded-2xl object-cover" />
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
@@ -60,14 +61,14 @@ export default function Home() {
                   </div>
                   <p className="mt-5 text-sm text-muted-foreground">Outcome: Built focused learning loops for recognition, pronunciation, and writing practice.</p>
                   <div className="relative z-[2] mt-5 flex gap-4">
-                    <a href="/alfibat" className="text-sm font-semibold hover:underline">View project →</a>
+                    <Link href="/alfibat" className="text-sm font-semibold hover:underline">View project →</Link>
                     <a href="https://apps.apple.com/us/app/alfibat/id6758281390" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold hover:underline">App Store →</a>
                   </div>
                 </ChromaCard>
 
                 {/* WordRonin */}
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-emerald-500/35 to-transparent">
-                  <a href="/wordronin" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View WordRonin project" />
+                  <Link href="/wordronin" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View WordRonin project" />
                   <div className="flex items-start justify-between gap-4">
                     <img src="/logos/wordronin.png" alt="WordRonin logo" className="w-20 h-20 rounded-2xl object-cover" />
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
@@ -84,14 +85,14 @@ export default function Home() {
                   </div>
                   <p className="mt-5 text-sm text-muted-foreground">Outcome: Implemented a core gameplay loop designed for fast iteration and playtesting.</p>
                   <div className="relative z-[2] mt-5 flex gap-4">
-                    <a href="/wordronin" className="text-sm font-semibold hover:underline">View project →</a>
+                    <Link href="/wordronin" className="text-sm font-semibold hover:underline">View project →</Link>
                     <a href="https://testflight.apple.com/join/aYfRNrcq" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold hover:underline">TestFlight →</a>
                   </div>
                 </ChromaCard>
 
                 {/* REVO */}
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-rose-500/35 to-transparent">
-                  <a href="/revo" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View REVO project" />
+                  <Link href="/revo" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View REVO project" />
                   <div className="flex items-start justify-end gap-4">
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
                   </div>
@@ -113,7 +114,7 @@ export default function Home() {
 
                 {/* AimGame */}
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-amber-500/35 to-transparent">
-                  <a href="/aimgame" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View AimGame project" />
+                  <Link href="/aimgame" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View AimGame project" />
                   <div className="flex items-start justify-between gap-4">
                     <img src="/logos/aimgame.png" alt="AimGame logo" className="w-20 h-20 rounded-2xl object-cover" />
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
@@ -189,7 +190,7 @@ export default function Home() {
         <footer className="py-6 border-t">
           <div className="mx-auto max-w-5xl px-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-muted-foreground">
             <span>© 2026 Ali Aljahmi</span>
-            <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
+            <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
           </div>
         </footer>
       </main>
