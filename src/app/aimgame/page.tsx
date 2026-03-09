@@ -41,7 +41,7 @@ export default function AimGamePage() {
                 className="inline-block rounded-full bg-foreground text-background px-5 py-2 text-sm font-semibold hover:opacity-80 transition-opacity"
               >
                 Live Demo
-              </Link>
+              </a>
               <a
                 href="https://github.com/AliAtUmich/AimGame"
                 target="_blank"
@@ -49,7 +49,7 @@ export default function AimGamePage() {
                 className="inline-block rounded-full border px-5 py-2 text-sm font-semibold hover:bg-muted transition-colors"
               >
                 Source Code
-              </Link>
+              </a>
             </div>
           </div>
         </section>

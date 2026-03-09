@@ -59,7 +59,7 @@ export default function WordRoninPage() {
               className="inline-block rounded-full bg-foreground text-background px-5 py-2 text-sm font-semibold hover:opacity-80 transition-opacity"
             >
               View on TestFlight
-            </Link>
+            </a>
           </div>
         </div>
       </section>

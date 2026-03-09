@@ -66,7 +66,7 @@ export default function AlfiBaTPage() {
               className="inline-block rounded-full bg-foreground text-background px-5 py-2 text-sm font-semibold hover:opacity-80 transition-opacity"
             >
               View on App Store
-            </Link>
+            </a>
           </div>
         </div>
       </section>

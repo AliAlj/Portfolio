@@ -41,7 +41,7 @@ export default function REVOPage() {
                 className="inline-block rounded-full bg-foreground text-background px-5 py-2 text-sm font-semibold hover:opacity-80 transition-opacity"
               >
                 Source Code
-              </Link>
+              </a>
             </div>
           </div>
         </section>
