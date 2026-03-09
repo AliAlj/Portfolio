@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import ProjectCircularGallery from "@/components/project-circular-gallery";
 import type { GalleryItem } from "@/components/ui/circular-gallery";
+import { assetPath } from "@/lib/asset-path";
 
 export const metadata: Metadata = {
   title: "AlfiBaT | Ali Aljahmi",
@@ -13,22 +14,22 @@ const items: GalleryItem[] = [
   {
     common: "Alphabet Grid",
     binomial: "Browse letters and jump into focused practice",
-    photo: { url: "/alfibat/alphabet.png", text: "AlfiBaT alphabet grid", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/alfibat/alphabet.png"), text: "AlfiBaT alphabet grid", by: "Ali Aljahmi" },
   },
   {
     common: "Letter Lesson",
     binomial: "Pronunciation plus letter forms in context",
-    photo: { url: "/alfibat/letterview.png", text: "AlfiBaT letter lesson", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/alfibat/letterview.png"), text: "AlfiBaT letter lesson", by: "Ali Aljahmi" },
   },
   {
     common: "Name Writing",
     binomial: "Personal practice that keeps people engaged",
-    photo: { url: "/alfibat/namewriting.png", text: "AlfiBaT name writing", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/alfibat/namewriting.png"), text: "AlfiBaT name writing", by: "Ali Aljahmi" },
   },
   {
     common: "Connect Game",
     binomial: "Reinforces recognition through fast matching",
-    photo: { url: "/alfibat/connectgame.png", text: "AlfiBaT connect game", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/alfibat/connectgame.png"), text: "AlfiBaT connect game", by: "Ali Aljahmi" },
   },
 ];
 

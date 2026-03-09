@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site-header";
 import { HeroScrollDemo } from "@/components/hero-scroll-demo";
 import { ChromaOverlay } from "@/components/chroma-overlay";
 import { ChromaCard } from "@/components/chroma-card";
+import { assetPath } from "@/lib/asset-path";
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-violet-500/35 to-transparent">
                   <Link href="/alfibat" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View AlfiBaT project" />
                   <div className="flex items-start justify-between gap-4">
-                    <img src="/logos/alfibat.png" alt="AlfiBaT logo" className="w-20 h-20 rounded-2xl object-cover" />
+                    <img src={assetPath("/logos/alfibat.png")} alt="AlfiBaT logo" className="w-20 h-20 rounded-2xl object-cover" />
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
                   </div>
                   <div className="mt-5 flex items-center gap-2">
@@ -70,7 +71,7 @@ export default function Home() {
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-emerald-500/35 to-transparent">
                   <Link href="/wordronin" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View WordRonin project" />
                   <div className="flex items-start justify-between gap-4">
-                    <img src="/logos/wordronin.png" alt="WordRonin logo" className="w-20 h-20 rounded-2xl object-cover" />
+                    <img src={assetPath("/logos/wordronin.png")} alt="WordRonin logo" className="w-20 h-20 rounded-2xl object-cover" />
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
                   </div>
                   <div className="mt-5 flex items-center gap-2">
@@ -116,7 +117,7 @@ export default function Home() {
                 <ChromaCard className="group/card relative rounded-2xl border p-8 flex flex-col overflow-hidden transition-colors bg-gradient-to-br from-amber-500/35 to-transparent">
                   <Link href="/aimgame" className="absolute inset-0 rounded-2xl z-[1]" aria-label="View AimGame project" />
                   <div className="flex items-start justify-between gap-4">
-                    <img src="/logos/aimgame.png" alt="AimGame logo" className="w-20 h-20 rounded-2xl object-cover" />
+                    <img src={assetPath("/logos/aimgame.png")} alt="AimGame logo" className="w-20 h-20 rounded-2xl object-cover" />
                     <span className="rounded-full border px-3 py-1 text-xs font-semibold text-muted-foreground whitespace-nowrap">Complete</span>
                   </div>
                   <div className="mt-5 flex items-center gap-2">

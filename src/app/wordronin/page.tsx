@@ -8,22 +8,23 @@ export const metadata: Metadata = {
 };
 import ProjectCircularGallery from "@/components/project-circular-gallery";
 import type { GalleryItem } from "@/components/ui/circular-gallery";
+import { assetPath } from "@/lib/asset-path";
 
 const items: GalleryItem[] = [
   {
     common: "Home Screen",
     binomial: "Clear mode choice and fast start",
-    photo: { url: "/wordronin/wordroninhomescreen.png", text: "WordRonin home", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/wordronin/wordroninhomescreen.png"), text: "WordRonin home", by: "Ali Aljahmi" },
   },
   {
     common: "Slice Mode",
     binomial: "Fast paced loop with scoring pressure",
-    photo: { url: "/wordronin/wordroninslicescreen.png", text: "WordRonin slice", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/wordronin/wordroninslicescreen.png"), text: "WordRonin slice", by: "Ali Aljahmi" },
   },
   {
     common: "Listen Mode",
     binomial: "Audio driven interaction designed for accessibility",
-    photo: { url: "/wordronin/wordroninlistenscreen.png", text: "WordRonin listen", by: "Ali Aljahmi" },
+    photo: { url: assetPath("/wordronin/wordroninlistenscreen.png"), text: "WordRonin listen", by: "Ali Aljahmi" },
   },
 ];
 
