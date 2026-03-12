@@ -99,7 +99,7 @@ export default function AlfiBaTPage() {
       <ProjectCircularGallery
         title="Screens"
         items={items}
-        heightVh={130}
+        heightVh={110}
         radius={520}
       />
 

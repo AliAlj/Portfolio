@@ -88,7 +88,7 @@ export default function WordRoninPage() {
       <ProjectCircularGallery
         title="Gameplay Screens"
         items={items}
-        heightVh={130}
+        heightVh={110}
         radius={500}
       />
 
