@@ -4,12 +4,12 @@ export function HeroScrollDemo() {
   return (
     <section className="pt-20 pb-10">
       <div className="mx-auto max-w-5xl px-6">
-        <p className="text-4xl font-bold">Ali Aljahmi</p>
+        <p className="text-6xl md:text-8xl font-bold">Ali Aljahmi</p>
         <p className="text-sm font-semibold text-muted-foreground">
           Computer Science Graduate · Apple Developer Academy Associate Learner
         </p>
 
-        <h1 className="mt-3 text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+        <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight tracking-tight">
           Building clear,<br />iterative products
         </h1>
 
