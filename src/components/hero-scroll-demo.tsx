@@ -5,7 +5,7 @@ export function HeroScrollDemo() {
     <section className="pt-20 pb-10">
       <div className="mx-auto max-w-5xl px-6">
         <p className="text-5xl md:text-6xl font-bold">Ali Aljahmi</p>
-        <p className="text-sm font-semibold text-muted-foreground">
+        <p className="mt-3 text-sm font-semibold text-muted-foreground">
           Computer Science Graduate · Apple Developer Academy Associate Learner
         </p>
 
