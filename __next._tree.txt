@@ -4,4 +4,4 @@
 :HL["/Portfolio/logos/alfibat.png","image"]
 :HL["/Portfolio/logos/wordronin.png","image"]
 :HL["/Portfolio/logos/aimgame.png","image"]
-0:{"buildId":"4mggWM-gjIqLJwSCjQZd0","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"nLJ65AaSKIA_W4ifEOnKg","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
